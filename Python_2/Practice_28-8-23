@@ -1,0 +1,21 @@
+length = int(input("Enter the length of the strings : "))
+
+bit1 = input("Enter the first bit  : ")
+bit2 = input("Enter the second bit : ")
+
+if len(bit1) == len(bit2):
+    print("Now You can proceed for further calculations !!")
+    
+else:
+    print("The length of both the srtings should be equal !!")
+    
+def ArrayChallenge(string):
+    result = ""
+    for i in range(len(string)):
+        if string[0][i] == string[1][i]:      
+            result += "0"
+        else:
+            result += "1"
+    return(result)
+print(ArrayChallenge(input()))
+    

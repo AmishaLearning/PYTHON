@@ -1,0 +1,80 @@
+Test Case 1: Empty Cart
+-----------------------
+Input: 
+Enter the Number of Products in cart : 0
+
+Expected Output:
+Total amount: 0
+
+Test Case 2: Single Product in Cart
+-----------------------------------
+Input:
+Enter the Number of Products in cart : 1
+Enter product name: Product A
+Enter unit price: 10.50
+Enter quantity: 2
+
+Expected Output:
+Total amount: 21.00
+
+Test Case 3: Multiple Products in Cart
+--------------------------------------
+Input:
+Enter the Number of Products in cart : 3
+Enter product name: Product A
+Enter unit price: 10.50
+Enter quantity: 2
+Enter product name: Product B
+Enter unit price: 5.25
+Enter quantity: 4
+Enter product name: Product C
+Enter unit price: 2.99
+Enter quantity: 1
+
+Expected Output:
+Total amount: 44.99
+
+Test Case 4: Product with Decimal Unit Price and Quantity
+---------------------------------------------------------
+Input:
+Enter the Number of Products in cart : 1
+Enter product name: Product X
+Enter unit price: 2.75
+Enter quantity: 3
+
+Expected Output:
+Total amount: 8.25
+
+Test Case 5: Large Quantity of Products
+---------------------------------------
+Input:
+Enter the Number of Products in cart : 5
+Enter product name: Product A
+Enter unit price: 10.00
+Enter quantity: 100
+Enter product name: Product B
+Enter unit price: 2.50
+Enter quantity: 200
+Enter product name: Product C
+Enter unit price: 5.00
+Enter quantity: 50
+Enter product name: Product D
+Enter unit price: 1.00
+Enter quantity: 500
+Enter product name: Product E
+Enter unit price: 0.50
+Enter quantity: 1000
+
+Expected Output:
+Total amount: 2750.00
+
+Test Case 6: Invalid Input (Non-Numeric Unit Price or Quantity)
+---------------------------------------------------------------
+Input:
+Enter the Number of Products in cart : 1
+Enter product name: Product Y
+Enter unit price: abc
+
+Expected Output:
+Getting Product details failed due to ::  could not convert string to float: 'abc'
+Some of the details in the cart are invalid. Please enter correct details
